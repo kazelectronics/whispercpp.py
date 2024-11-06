@@ -25,10 +25,10 @@ whisper_clib = ('whisper_clib', {'sources': ['whisper.cpp/ggml/src/ggml.c']})
 
 setup(
     name='whispercpp',
-    version='1.0',
+    version='1.2',
     description='Python bindings for whisper.cpp',
-    author='Luke Southam',
-    author_email='luke@devthe.com',
+    author='Kaz Khaki',
+    author_email='kaz@devthe.com',
     libraries=[whisper_clib],
     ext_modules = cythonize("whispercpp.pyx"),
     include_dirs = ['./whisper.cpp/include/', './whisper.cpp/ggml/include/', numpy.get_include()],
